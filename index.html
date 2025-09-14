@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superhero Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Superhero Movies</h1>
+    <nav>
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="marvel">Marvel</button>
+      <button class="filter-btn" data-filter="dc">DC</button>
+      <button class="filter-btn" data-filter="indian">Indian</button>
+    </nav>
+  </header>
+  
+  <main class="movie-grid">
+    <!-- Movie Posters with links to movie.html -->
+    <a href="movie.html?movie=dark_knight" class="movie-card dc">
+      <img src="posters/dark_knight.jpg" alt="Dark Knight">
+      <p>Dark Knight</p>
+    </a>
+    <a href="movie.html?movie=dark_knight_rises" class="movie-card dc">
+      <img src="posters/dark_knight_rises.jpg" alt="Dark Knight Rises">
+      <p>Dark Knight Rises</p>
+    </a>
+    <a href="movie.html?movie=superman" class="movie-card dc">
+      <img src="posters/superman.jpg" alt="Superman">
+      <p>Superman</p>
+    </a>
+    <a href="movie.html?movie=f4" class="movie-card marvel">
+      <img src="posters/f4.jpg" alt="Fantastic Four">
+      <p>Fantastic Four</p>
+    </a>
+    <a href="movie.html?movie=deadpool" class="movie-card marvel">
+      <img src="posters/deadpool.jpg" alt="Deadpool">
+      <p>Deadpool</p>
+    </a>
+    <a href="movie.html?movie=wolverine" class="movie-card marvel">
+      <img src="posters/wolverine.jpg" alt="Wolverine">
+      <p>Wolverine</p>
+    </a>
+    <a href="movie.html?movie=spiderman2" class="movie-card marvel">
+      <img src="posters/spiderman2.jpg" alt="Spiderman 2">
+      <p>Spiderman 2</p>
+    </a>
+    <a href="movie.html?movie=no_way_home" class="movie-card marvel">
+      <img src="posters/no_way_home.jpg" alt="No Way Home">
+      <p>No Way Home</p>
+    </a>
+    <a href="movie.html?movie=ragnorok" class="movie-card marvel">
+      <img src="posters/ragnorok.jpg" alt="Ragnorok">
+      <p>Ragnorok</p>
+    </a>
+    <a href="movie.html?movie=infinity_war" class="movie-card marvel">
+      <img src="posters/infinity_war.jpg" alt="Infinity War">
+      <p>Infinity War</p>
+    </a>
+    <a href="movie.html?movie=endgame" class="movie-card marvel">
+      <img src="posters/endgame.jpg" alt="Endgame">
+      <p>Endgame</p>
+    </a>
+    <a href="movie.html?movie=civil_war" class="movie-card marvel">
+      <img src="posters/civil_war.jpg" alt="Civil War">
+      <p>Civil War</p>
+    </a>
+    <a href="movie.html?movie=krrish" class="movie-card indian">
+      <img src="posters/krrish.jpg" alt="Krrish">
+      <p>Krrish</p>
+    </a>
+    <a href="movie.html?movie=krrish3" class="movie-card indian">
+      <img src="posters/krrish3.jpg" alt="Krrish 3">
+      <p>Krrish 3</p>
+    </a>
+    <a href="movie.html?movie=flying_jatt" class="movie-card indian">
+      <img src="posters/flying_jatt.jpg" alt="Flying Jatt">
+      <p>Flying Jatt</p>
+    </a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

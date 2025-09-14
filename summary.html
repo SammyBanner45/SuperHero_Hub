@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="movie-title">Summary</h1>
+  </header>
+
+  <main class="summary">
+    <p id="summary-text">Loading summary...</p>
+    <button onclick="window.history.back()">Back</button>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const movie = params.get("movie");
+    document.getElementById("movie-title").innerText = movie.replace(/_/g, ' ');
+
+    const summaries = {
+      dark_knight: "The Dark Knight follows Batman as he faces the Joker in Gotham.",
+      dark_knight_rises: "Batman returns to fight Bane and save Gotham once again.",
+      superman: "The story of Superman and his origin on planet Krypton.",
+      f4: "Fantastic Four gain superpowers after cosmic exposure.",
+      deadpool: "Deadpool, the wisecracking anti-hero, seeks revenge.",
+      wolverine: "Wolverine faces his past and dark secrets.",
+      spiderman2: "Peter Parker battles Doc Ock while balancing his life.",
+      no_way_home: "Multiverse chaos erupts as villains return.",
+      ragnorok: "Thor fights Hela to save Asgard.",
+      infinity_war: "Avengers battle Thanos for the Infinity Stones.",
+      endgame: "Avengers attempt to undo the snap.",
+      civil_war: "Conflict arises between Iron Man and Captain America.",
+      krrish: "Indian superhero Krrish saves the world.",
+      krrish3: "Krrish faces mutants in a deadly battle.",
+      flying_jatt: "A reluctant superhero fights pollution and evil."
+    };
+
+    document.getElementById("summary-text").innerText = summaries[movie] || "Summary not available.";
+  </script>
+</body>
+</html>

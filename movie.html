@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="movie-title">Movie Name</h1>
+  </header>
+
+  <main class="details">
+    <button onclick="openPage('summary.html')">Summary</button>
+    <button onclick="alert('Cast info coming soon!')">Cast</button>
+    <button onclick="alert('Collection info coming soon!')">Collection</button>
+    <button onclick="alert('Timeline info coming soon!')">Timeline</button>
+  </main>
+
+  <script>
+    // Get movie name from URL and set title
+    const params = new URLSearchParams(window.location.search);
+    const movie = params.get("movie");
+    document.getElementById("movie-title").innerText = movie.replace(/_/g, ' ');
+
+    function openPage(url) {
+      window.location.href = url + "?movie=" + movie;
+    }
+  </script>
+</body>
+</html>
