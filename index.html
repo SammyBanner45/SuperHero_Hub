@@ -3,84 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Superhero Movies</title>
+  <title>Superhero HUB</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Superhero Movies</h1>
+    <h1>Superhero HUB</h1>
     <nav>
-      <button class="filter-btn" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="marvel">Marvel</button>
-      <button class="filter-btn" data-filter="dc">DC</button>
-      <button class="filter-btn" data-filter="indian">Indian</button>
+      <a href="#marvel" style="color:red;">Marvel</a>
+      <a href="#dc" style="color:greenyellow">DC</a>
+      <a href="#indian">Indian</a>
     </nav>
   </header>
-  
-  <main class="movie-grid">
-    <!-- Movie Posters with links to movie.html -->
-    <a href="movie.html?movie=dark_knight" class="movie-card dc">
-      <img src="posters/dark_knight.jpg" alt="Dark Knight">
-      <p>Dark Knight</p>
-    </a>
-    <a href="movie.html?movie=dark_knight_rises" class="movie-card dc">
-      <img src="posters/dark_knight_rises.jpg" alt="Dark Knight Rises">
-      <p>Dark Knight Rises</p>
-    </a>
-    <a href="movie.html?movie=superman" class="movie-card dc">
-      <img src="posters/superman.jpg" alt="Superman">
-      <p>Superman</p>
-    </a>
-    <a href="movie.html?movie=f4" class="movie-card marvel">
-      <img src="posters/f4.jpg" alt="Fantastic Four">
-      <p>Fantastic Four</p>
-    </a>
-    <a href="movie.html?movie=deadpool" class="movie-card marvel">
-      <img src="posters/deadpool.jpg" alt="Deadpool">
-      <p>Deadpool</p>
-    </a>
-    <a href="movie.html?movie=wolverine" class="movie-card marvel">
-      <img src="posters/wolverine.jpg" alt="Wolverine">
-      <p>Wolverine</p>
-    </a>
-    <a href="movie.html?movie=spiderman2" class="movie-card marvel">
-      <img src="posters/spiderman2.jpg" alt="Spiderman 2">
-      <p>Spiderman 2</p>
-    </a>
-    <a href="movie.html?movie=no_way_home" class="movie-card marvel">
-      <img src="posters/no_way_home.jpg" alt="No Way Home">
-      <p>No Way Home</p>
-    </a>
-    <a href="movie.html?movie=ragnorok" class="movie-card marvel">
-      <img src="posters/ragnorok.jpg" alt="Ragnorok">
-      <p>Ragnorok</p>
-    </a>
-    <a href="movie.html?movie=infinity_war" class="movie-card marvel">
-      <img src="posters/infinity_war.jpg" alt="Infinity War">
-      <p>Infinity War</p>
-    </a>
-    <a href="movie.html?movie=endgame" class="movie-card marvel">
-      <img src="posters/endgame.jpg" alt="Endgame">
-      <p>Endgame</p>
-    </a>
-    <a href="movie.html?movie=civil_war" class="movie-card marvel">
-      <img src="posters/civil_war.jpg" alt="Civil War">
-      <p>Civil War</p>
-    </a>
-    <a href="movie.html?movie=krrish" class="movie-card indian">
-      <img src="posters/krrish.jpg" alt="Krrish">
-      <p>Krrish</p>
-    </a>
-    <a href="movie.html?movie=krrish3" class="movie-card indian">
-      <img src="posters/krrish3.jpg" alt="Krrish 3">
-      <p>Krrish 3</p>
-    </a>
-    <a href="movie.html?movie=flying_jatt" class="movie-card indian">
-      <img src="posters/flying_jatt.jpg" alt="Flying Jatt">
-      <p>Flying Jatt</p>
-    </a>
+
+  <main>
+    <!-- ================= Marvel ================= -->
+    <section id="marvel">
+      <h2>Marvel Cinematic Universe (MCU)</h2>
+
+      <!-- Iron Man Series -->
+      <h3>Iron Man</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=ironman1" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Ironmanposter.JPG" alt="Iron Man">
+          <p>Iron Man (2008)</p>
+        </a>
+        <a href="movie.html?movie=ironman2" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Iron_Man_2_poster.jpg" alt="Iron Man 2">
+          <p>Iron Man 2 (2010)</p>
+        </a>
+        <a href="movie.html?movie=ironman3" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3">
+          <p>Iron Man 3 (2013)</p>
+        </a>
+      </div>
+
+      <!-- Captain America Series -->
+      <h3>Captain America</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=first_avenger" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Captain_America_The_First_Avenger_poster.jpg" alt="The First Avenger">
+          <p>The First Avenger (2011)</p>
+        </a>
+        <a href="movie.html?movie=winter_soldier" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Captain_America_The_Winter_Soldier_poster.jpg" alt="Winter Soldier">
+          <p>Winter Soldier (2014)</p>
+        </a>
+        <a href="movie.html?movie=civil_war" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg" alt="Civil War">
+          <p>Civil War (2016)</p>
+        </a>
+      </div>
+
+      <!-- Avengers Series -->
+      <h3>Avengers</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=avengers" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg" alt="Avengers">
+          <p>The Avengers (2012)</p>
+        </a>
+        <a href="movie.html?movie=age_of_ultron" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron">
+          <p>Age of Ultron (2015)</p>
+        </a>
+        <a href="movie.html?movie=infinity_war" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg" alt="Infinity War">
+          <p>Infinity War (2018)</p>
+        </a>
+        <a href="movie.html?movie=endgame" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Endgame">
+          <p>Endgame (2019)</p>
+        </a>
+      </div>
+
+      <!-- Other Marvel Heroes -->
+      <h3>Other Marvel Movies</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=thor_ragnarok" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Thor_Ragnarok_poster.jpg" alt="Thor Ragnarok">
+          <p>Thor: Ragnarok</p>
+        </a>
+        <a href="movie.html?movie=spiderman_nwh" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Spider-Man_No_Way_Home_poster.jpg" alt="Spider-Man No Way Home">
+          <p>Spider-Man: No Way Home</p>
+        </a>
+        <a href="movie.html?movie=deadpool_wolverine" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Deadpool_Wolverine_poster.jpg" alt="Deadpool & Wolverine">
+          <p>Deadpool & Wolverine (2024)</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= DC ================= -->
+    <section id="dc">
+      <h2>DC Universe</h2>
+
+      <!-- Batman Trilogy -->
+      <h3>Batman (The Dark Knight Trilogy)</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=batman_begins" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/af/Batman_Begins_Poster.jpg" alt="Batman Begins">
+          <p>Batman Begins (2005)</p>
+        </a>
+        <a href="movie.html?movie=dark_knight" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg" alt="The Dark Knight">
+          <p>The Dark Knight (2008)</p>
+        </a>
+        <a href="movie.html?movie=dark_knight_rises" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg" alt="Dark Knight Rises">
+          <p>Dark Knight Rises (2012)</p>
+        </a>
+      </div>
+
+      <!-- Superman -->
+      <h3>Superman</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=superman1978" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/85/Superman_%281978_film%29_poster.jpg" alt="Superman 1978">
+          <p>Superman (1978)</p>
+        </a>
+        <a href="movie.html?movie=man_of_steel" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/85/ManofSteelFinalPoster.jpg" alt="Man of Steel">
+          <p>Man of Steel (2013)</p>
+        </a>
+        <a href="movie.html?movie=bvs" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Batman_v_Superman_poster.jpg" alt="Batman v Superman">
+          <p>Batman v Superman (2016)</p>
+        </a>
+      </div>
+
+      <!-- Justice League -->
+      <h3>Justice League</h3>
+      <div class="movie-grid">
+        <a href="movie.html?movie=justice_league" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Justice_League_film_poster.jpg" alt="Justice League">
+          <p>Justice League (2017)</p>
+        </a>
+        <a href="movie.html?movie=snyder_cut" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Zack_Snyder%27s_Justice_League.png" alt="Snyder Cut">
+          <p>Snyder Cut (2021)</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= Indian ================= -->
+    <section id="indian">
+      <h2>Indian Superheroes</h2>
+      <div class="movie-grid">
+        <a href="movie.html?movie=koi_mil_gaya" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Koi..._Mil_Gaya_poster.jpg" alt="Koi Mil Gaya">
+          <p>Koi... Mil Gaya (2003)</p>
+        </a>
+        <a href="movie.html?movie=krrish" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Krrish_poster.jpg" alt="Krrish">
+          <p>Krrish (2006)</p>
+        </a>
+        <a href="movie.html?movie=krrish3" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Krrish_3_Poster.jpg" alt="Krrish 3">
+          <p>Krrish 3 (2013)</p>
+        </a>
+        <a href="movie.html?movie=flying_jatt" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/A_Flying_Jatt_poster.jpg" alt="A Flying Jatt">
+          <p>A Flying Jatt (2016)</p>
+        </a>
+        <a href="movie.html?movie=bhavesh_joshi" class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Bhavesh_Joshi_Superhero_Poster.jpg" alt="Bhavesh Joshi">
+          <p>Bhavesh Joshi Superhero (2018)</p>
+        </a>
+      </div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Superhero HUB | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
